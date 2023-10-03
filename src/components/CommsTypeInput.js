@@ -1,5 +1,3 @@
-import { useRef, useState } from "react";
-
 const CommsTypeInput = ({ optionsState, setCommsType }) => {
 
   const changeCommsType = event => {
