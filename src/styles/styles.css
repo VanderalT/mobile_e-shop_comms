@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  border-radius: 5px;
+  border-style: solid;
+}
+input:hover {
+  border-color: #00A45F;
+}
+
+#websiteHeader {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #00A45F;
+}
+#websiteHeader #websiteTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+#constantDetails {
+  display: flex;
+  justify-content: space-around;
+}
+
+#customerDetails {
+  display: flex;
+  justify-content: space-around;
+}
+#customerDetails button {
+  height: -moz-fit-content;
+  height: fit-content;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #b4b4b4;
+  background-color: #ffffff;
+  color: #00A45F;
+  transition: 0.3s;
+}
+#customerDetails button:hover:enabled {
+  cursor: pointer;
+  color: #7c1010;
+  border-color: #7c1010;
+  background-color: #F4F4F4;
+}
+
+#inputDetails {
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #F4F4F4;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F4F4F4;
+}
+
+.form-detail {
+  display: flex;
+  justify-content: space-around;
+}
+.form-detail label {
+  margin: 0 10px;
+}
+
+#commsType {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F4F4F4;
+}
+#commsType select {
+  width: 25vw;
+  background-color: #ffffff;
+}
+#commsType select option:hover {
+  background-color: #00A45F;
+  color: #ffffff;
+}
+
+#commsOutput {
+  display: flex;
+  flex-direction: column;
+}
+#commsOutput .comms-extra-details {
+  margin: 20px;
+  align-self: center;
+}
+#commsOutput .comms-extra-details label {
+  margin-right: 10px;
+}
+#commsOutput .comms-extra-details input {
+  margin-right: 10px;
+}
+#commsOutput .comms-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+#commsOutput .comms-header h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#commsOutput .comms-header button {
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-self: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #b4b4b4;
+  background-color: #ffffff;
+  color: #00A45F;
+  transition: 0.3s;
+}
+#commsOutput .comms-header button:hover:enabled {
+  cursor: pointer;
+  color: #007c48;
+  border-color: #00A45F;
+}
+#commsOutput .comms-header button:disabled {
+  background-color: #F4F4F4;
+  color: #b4b4b4;
+}
+#commsOutput .comms-mobile-content {
+  width: 75vw;
+  align-self: center;
+}
+#commsOutput .comms-email-content {
+  width: 75vw;
+  align-self: center;
+}
+#commsOutput #signature {
+  font-family: Arial, Helvetica, sans-serif;
+  table-layout: auto;
+}
+#commsOutput #signature h3 {
+  margin: 5px;
+}
+#commsOutput #signature #signatureTable {
+  width: 500px;
+}
+#commsOutput #signature #signatureDetails {
+  height: 50px;
+  width: 350px;
+  vertical-align: top;
+  color: #00A45F;
+}
+#commsOutput #signature #signatureAddress {
+  -moz-column-span: 1;
+       column-span: 1;
+  width: 500px;
+  font-size: 12px;
+}
+
+#instructionsContainer {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=styles.css.map */

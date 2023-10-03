@@ -1,0 +1,193 @@
+$OneNZColour : #00A45F;
+$DarkerOneNZColour : #007c48;
+$Grey : #F4F4F4;
+$DarkerGrey : #b4b4b4;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    border-radius: 5px;
+    border-style: solid;
+
+    &:hover{
+        border-color: $OneNZColour;
+    }
+}
+
+#websiteHeader{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: $OneNZColour;
+
+    #websiteTitle{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+    }
+
+}
+
+#constantDetails{
+    display: flex;
+    justify-content: space-around;
+}
+
+#customerDetails{
+    display: flex;
+    justify-content: space-around;
+    button{
+        height: fit-content;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        border-color: $DarkerGrey;
+        background-color: #ffffff;
+        color: $OneNZColour;
+        transition: 0.3s;
+
+        &:hover:enabled{
+            cursor: pointer;
+            color: #7c1010;
+            border-color: #7c1010;
+            background-color: $Grey;
+        }
+    }
+}
+
+#inputDetails{
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $Grey;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $Grey;
+}
+
+.form-detail{
+    display: flex;
+    justify-content: space-around;
+
+        label{
+            margin: 0 10px;
+        }
+}
+
+#commsType{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $Grey;
+    select{
+        width: 25vw;
+        background-color: #ffffff;
+
+        option:hover{
+            background-color: $OneNZColour;
+            color: #ffffff;
+        }
+    }
+}
+
+#commsOutput{
+    display: flex;
+    flex-direction: column;
+
+    .comms-extra-details{
+        margin: 20px;
+        align-self: center;
+
+        label{
+            margin-right: 10px;
+        }
+        input{
+            margin-right: 10px;
+        }
+    }
+
+    .comms-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+
+        h2{
+            width: fit-content;
+        }
+
+        button{
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-self: center;
+            height: fit-content;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 5px;
+            border-color: $DarkerGrey;
+            background-color: #ffffff;
+            color: $OneNZColour;
+            transition: 0.3s;
+
+            &:hover:enabled{
+                cursor: pointer;
+                color: $DarkerOneNZColour;
+                border-color: $OneNZColour;
+            }
+
+            &:disabled{
+                background-color: $Grey;
+                color: $DarkerGrey;
+            }
+
+        }
+    }
+
+    .comms-mobile-content{
+        width: 75vw;
+        align-self: center;
+    }
+
+    .comms-email-content{
+        width: 75vw;
+        align-self: center;
+    }
+
+    #signature{
+        font-family: Arial, Helvetica, sans-serif;
+        table-layout: auto;
+
+        h3{
+            margin: 5px;
+        }
+
+        #signatureTable{
+            width: 500px;
+        }
+
+        #signatureDetails{
+            height: 50px;
+            width: 350px;
+            vertical-align: top;
+            color: $OneNZColour;
+        }
+
+        #signatureAddress{
+            column-span: 1;
+            width: 500px;
+            font-size: 12px;
+        }
+    }
+}
+
+#instructionsContainer{
+    display: flex;
+    justify-content: center;
+}

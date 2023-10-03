@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import ConstantDetails from "./components/ConstantDetailInput";
+import CommsTypeInput from "./components/CommsTypeInput";
+import { useState } from "react";
+import CustomerDetails from "./components/CustomerDetailInput";
+import CommsOutput from "./components/CommsOutput";
+import './styles/styles.css';
+
 
 function App() {
+
+  const [agentName, setAgentName] = useState( '' );
+  const [sevenDaysDate, setDate] = useState( '' );
+  const [commsType, setCommsType] = useState( '' );
+  const [customerName, setCustomerName] = useState( '' );
+  const [customerDot, setCustomerDot] = useState( '' );
+
+  function clearComms () {
+    setCommsType('Empty');
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <body>
+      <div className="app">
+        <header id="websiteHeader">
+          <h1 id="websiteTitle">Online Shop Comms Tool</h1>
+        </header>
+        <div id="inputDetails">
+          <ConstantDetails setAgentName={setAgentName} setSevenDaysDate={setDate} />
+          <CustomerDetails setCustomerName={setCustomerName} setCustomerDot={setCustomerDot} clearComms={clearComms} />
+        </div>
+        <CommsTypeInput setCommsType={setCommsType} optionsState={commsType} />
+        <CommsOutput commsType={commsType} agentName={agentName} dueDate={sevenDaysDate} customerName={customerName} dotNumber={customerDot}/>
+      </div>
+    </body>
+  )
 }
 
 export default App;
