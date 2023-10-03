@@ -63,6 +63,7 @@ function EntryStampRequired(props) {
                     Please provide the required information by {props.dueDate} and once the requested information has been recieved, we will go ahead and resume your order.<br />
                     <br />
                     Nga Mihi,<br />
+                    <br/>
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

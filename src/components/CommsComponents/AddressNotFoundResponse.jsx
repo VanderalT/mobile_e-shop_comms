@@ -61,10 +61,10 @@ function AddressNotFoundResponseComms(props) {
                     Please respond within 4 days &#40;Mon - Fri 8:00am to 6:00pm&#41; so we can proceed.<br />
                     <br />
                     Nga Mihi,<br />
+                    <br />
                     <Signature agentName={props.agentName} />
                 </p>
             </div>
-
         </div>
     );
 

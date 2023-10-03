@@ -66,6 +66,7 @@ function DuplicateAddress(props) {
                     Your reference number is {props.dotNumber}.<br />
                     <br />
                     Nga Mihi,<br />
+                    <br />
                     <Signature agentName={props.agentName} />
                 </p>
             </div>
