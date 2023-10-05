@@ -4,8 +4,15 @@ function ConstantDetails ({ setAgentName , setSevenDaysDate }) {
     setAgentName(event.target.value);
   };
 
-  const daysChange = event => {
-    setSevenDaysDate(event.target.value);
+  const daysChange = () => {
+    var date = document.querySelector('#sevenDaysDate');
+    var dateValue = date.value;
+    var dateYear = dateValue.substring(0,4);
+    var dateMonth = dateValue.substring(5,7);
+    var dateDay = dateValue.substring(8,10);
+    var dateReFormatted = dateDay + "/" + dateMonth + "/" + dateYear;
+    console.log(dateReFormatted);
+    setSevenDaysDate(dateReFormatted);
   }
 
   return (
@@ -16,7 +23,7 @@ function ConstantDetails ({ setAgentName , setSevenDaysDate }) {
       </div>
       <div className="form-detail">
         <label htmlFor="date_seven_days">7 Days Date</label>
-        <input type="date" name="date_seven_days" onChange={daysChange}></input>
+        <input type="date" name="date_seven_days" id="sevenDaysDate" onChange={daysChange}></input>
       </div>
     </div>
   )
