@@ -11,6 +11,7 @@ import AddressNotFoundResponseComms from "./CommsComponents/AddressNotFoundRespo
 import VisaRequired from "./CommsComponents/VisaRequired";
 import EntryStampRequired from "./CommsComponents/EntryStampRequired"
 import Instructions from "./CommsComponents/Instructions";
+import CancelledIFPOrder from "./CommsComponents/CancelledIFPOrder"
 import CancelledIFPOrderVisitorVisa from "./CommsComponents/CancelledIFPOrderVisitorVisa";
 import CancelledOrder from "./CommsComponents/CancelledOrder";
 import CreditCheckDeclined from "./CommsComponents/CreditCheckDeclined";
