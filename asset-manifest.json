@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mobile_e-shop_comms/static/css/main.6d38dd67.css",
-    "main.js": "/mobile_e-shop_comms/static/js/main.48ea6af2.js",
+    "main.js": "/mobile_e-shop_comms/static/js/main.f2c19548.js",
     "static/media/oneNZLogo.png": "/mobile_e-shop_comms/static/media/oneNZLogo.31cf9ad7729f7a232907.png",
     "index.html": "/mobile_e-shop_comms/index.html",
     "main.6d38dd67.css.map": "/mobile_e-shop_comms/static/css/main.6d38dd67.css.map",
-    "main.48ea6af2.js.map": "/mobile_e-shop_comms/static/js/main.48ea6af2.js.map"
+    "main.f2c19548.js.map": "/mobile_e-shop_comms/static/js/main.f2c19548.js.map"
   },
   "entrypoints": [
     "static/css/main.6d38dd67.css",
-    "static/js/main.48ea6af2.js"
+    "static/js/main.f2c19548.js"
   ]
 }
