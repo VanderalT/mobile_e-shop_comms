@@ -41,11 +41,11 @@ function CancelledOrder (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Hi {props.customerName}, it's {props.agentName} here from One NZ. 
-                    We haven't heard back from you about the additional info we needed for your mobile order. 
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. 
+                    We haven't heard back from you about the additional info we needed for your mobile order {props.dotNumber}. 
                     Unfortunately, this means we've had to cancel it. 
                     Please call us on 0800 800 021 if you'd like to place a new order. 
-                    Thanks, {props.agentName} from One NZ.
+                    Ngā mihi, {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -58,13 +58,13 @@ function CancelledOrder (props) {
                     <br />
                     It's {props.agentName} here from One NZ. <br />
                     <br />
-                    We haven't heard back from you about the additional info we needed for your mobile order. <br />
+                    We haven't heard back from you about the additional info we needed for your mobile order {props.dotNumber}. <br />
                     <br />
                     Unfortunately, this means we've had to cancel it. <br />
                     <br />
                     Please call us on 0800 800 021 if you'd like to place a new order. <br />
                     <br />
-                    Nga mihi,
+                    Ngā mihi,
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

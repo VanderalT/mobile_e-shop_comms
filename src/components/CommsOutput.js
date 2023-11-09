@@ -15,7 +15,6 @@ import CancelledIFPOrder from "./CommsComponents/CancelledIFPOrder"
 import CancelledIFPOrderVisitorVisa from "./CommsComponents/CancelledIFPOrderVisitorVisa";
 import CancelledOrder from "./CommsComponents/CancelledOrder";
 import CreditCheckDeclined from "./CommsComponents/CreditCheckDeclined";
-import CreditCheckTermPlanDeclined from "./CommsComponents/CreditCheckTermPlanDeclined"
 import GeneralRMI from "./CommsComponents/GeneralRMI"
 import IFPCreditCheckDeclined from "./CommsComponents/IFPCreditCheckDeclined"
 import IFPCreditCheckPlanOnly from "./CommsComponents/IFPCreditCheckPlanOnly"
@@ -29,6 +28,7 @@ import PortInCompleted from "./CommsComponents/PortInCompleted"
 import PreToPostCompleted from "./CommsComponents/PreToPostCompleted"
 import ProofOfAddress from "./CommsComponents/ProofOfAddress"
 import TwoFactorAuthenticationBeforePort from "./CommsComponents/TwoFactorAuthenticationBeforePort"
+import PassportAndVisaRequired from "./CommsComponents/PassportAndVisaRequired"
 
 
 function CommsOutput (props) {
@@ -38,6 +38,11 @@ function CommsOutput (props) {
     if(commsTypeToDisplay === 'add_not_found'){
         return(
             <AddressNotFoundComms customerName={props.customerName} dotNumber={props.dotNumber} agentName={props.agentName} dueDate={props.dueDate}/>
+        )
+    }
+    else if(commsTypeToDisplay === 'passport_and_visa_required'){
+        return(
+            <PassportAndVisaRequired customerName={props.customerName} dotNumber={props.dotNumber} agentName={props.agentName} dueDate={props.dueDate}/>
         )
     }
     else if(commsTypeToDisplay === 'two_factor_auth_before_port'){
@@ -173,11 +178,6 @@ function CommsOutput (props) {
     else if(commsTypeToDisplay === 'cc_declined'){
         return(
             <CreditCheckDeclined customerName={props.customerName} dotNumber={props.dotNumber} agentName={props.agentName} dueDate={props.dueDate}/>
-        )
-    }
-    else if(commsTypeToDisplay === 'term_plan_cc_declined'){
-        return(
-            <CreditCheckTermPlanDeclined customerName={props.customerName} dotNumber={props.dotNumber} agentName={props.agentName} dueDate={props.dueDate}/>
         )
     }
     else if(commsTypeToDisplay === 'general_rmi'){

@@ -39,11 +39,11 @@ function EntryStampRequired(props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName}, it's {props.agentName} here from One NZ. We're working on your online order {props.dotNumber} but can't progress it because
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. We're working on your online order {props.dotNumber} but can't progress it because
                     we need to see a copy of your Visa type and expiry and your Entry Stamp/ E-Ticket.
                     *Copies must be readable and contain all 4 corners of the page*
                     We'll send you an email shortly, please respond to the email with the passport attached by {props.dueDate}.
-                    Nga Mihi, {props.agentName} from One NZ.
+                    Ngā mihi, {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -52,7 +52,7 @@ function EntryStampRequired(props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName},<br />
+                    Kia ora {props.customerName},<br />
                     <br />
                     It's {props.agentName} here from One NZ. We're working on your online order {props.dotNumber} but need a bit more info from you first.<br />
                     <br />
@@ -60,9 +60,9 @@ function EntryStampRequired(props) {
                     <br />
                     *Copies must be readable and contain all 4 corners of the page*<br />
                     <br />
-                    Please provide the required information by {props.dueDate} and once the requested information has been recieved, we will go ahead and resume your order.<br />
+                    Please provide the required information by {props.dueDate} and once the requested information has been received, we will go ahead and resume your order.<br />
                     <br />
-                    Nga Mihi,<br />
+                    Ngā mihi,<br />
                     <br/>
                     <Signature agentName={props.agentName} />
                 </p>

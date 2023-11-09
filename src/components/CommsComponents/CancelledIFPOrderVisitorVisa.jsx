@@ -41,11 +41,11 @@ function CancelledIFPOrderVisitorVisa (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName}, it's {props.agentName} here from One NZ. 
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. 
                     Thanks for your online purchase. 
-                    We don't accept a Visitor Visa to sign up for Pay Monthly Plan. 
-                    Unfortunately, this means we've had to cancel your Mobile order {props.dotNumber}. 
-                    Thanks, {props.customerName} from One NZ.
+                    We don't accept a visitor visa to sign up for pay monthly plan. 
+                    Unfortunately, this means we've had to cancel your mobile order {props.dotNumber}. 
+                    Ngā mihi, {props.customerName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -60,11 +60,11 @@ function CancelledIFPOrderVisitorVisa (props) {
                     <br />
                     Thanks for your online purchase. <br />
                     <br />
-                    We don't accept a Visitor Visa to sign up for Pay Monthly Plan. <br />
+                    We don't accept a visitor visa to sign up for pay monthly plan. <br />
                     <br />
-                    Unfortunately, this means we've had to cancel your Mobile order {props.dotNumber}. <br />
+                    Unfortunately, this means we've had to cancel your mobile order {props.dotNumber}. <br />
                     <br />
-                    Nga mihi,
+                    Ngā mihi,
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

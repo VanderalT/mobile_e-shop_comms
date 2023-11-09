@@ -50,9 +50,9 @@ function ExistingAccountConfirmation(props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileExistingAccContent}>
-                    Hi {props.customerName}, it's {props.agentName} here from One NZ. We're working on your online order but need a bit more info from you first.
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. We're working on your online order but need a bit more info from you first.
                     Give us a call on 0800 837 867 by {props.dueDate} &#40;Mon - Fri 8:00am to 6:00pm&#41; so we can get it sorted for you, or alternatively respond to the
-                    email sent by Online Shop. Your reference number is {props.dotNumber}. Thanks {props.agentName} from One NZ.
+                    email sent by Online Shop. Your reference number is {props.dotNumber}. Ngā mihi {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -61,7 +61,7 @@ function ExistingAccountConfirmation(props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailExistingAccContent}>
-                    Hi {props.customerName},<br />
+                    Kia ora {props.customerName},<br />
                     <br />
                     It's {props.agentName} here from One NZ.<br />
                     <br />
@@ -69,14 +69,14 @@ function ExistingAccountConfirmation(props) {
                     <br />
                     It seems that you have an existing billing account: {existingAccount}.<br />
                     <br />
-                    Please advise whether you wish for us to connect on the current <br />
+                    Please advise whether you wish for us to connect your number on the account mentioned above.<br />
                     <br />
                     You can do so by giving us a call on 0800 837 867 by {props.dueDate} &#40;Mon - Fri 8:00am to 6:00pm&#41; so we can get it sorted for you, or alternatively respond to this
                     email with the details.<br />
                     <br />
                     Your reference number is {props.dotNumber}.<br />
                     <br />
-                    Nga Mihi,<br />
+                    Ngā mihi,<br />
                     <br/>
                     <Signature agentName={props.agentName} />
                 </p>

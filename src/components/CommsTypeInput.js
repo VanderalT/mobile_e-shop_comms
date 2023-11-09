@@ -20,13 +20,13 @@ const CommsTypeInput = ({ optionsState, setCommsType }) => {
         <option value="ifp_visitor_visa_order_cancelled">IFP Vistor Visa Order Cancelled</option>
         <option disabled="true">--CC Declined--</option>
         <option value="cc_declined">CC Declined</option>
-        <option value="term_plan_cc_declined">Term Plan CC Declined</option>
         <option value="ifp_cc_declined">IFP CC Declined</option>
         <option value="ifp_cc_plan_only">IFP CC Plan Only</option>
         <option disabled="true">--Identification--</option>
         <option value="lt_id_required">Alternate Identification Required</option>
         <option value="passport_required">Passport Required</option>
         <option value="visa_required">Visa Required</option>
+        <option value="passport_and_visa_required">Passport and Visa Required</option>
         <option value="entry_stamp_required">Entry Stamp Required</option>
         <option value="nzdl_required">NZDL Required</option>
         <option value="poi_req">POI/BS Required</option>

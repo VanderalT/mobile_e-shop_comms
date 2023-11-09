@@ -50,12 +50,12 @@ function NumberContactedNoAnswer (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName},
+                    Kia ora {props.customerName},
                     it's {props.agentName} from One NZ.
                     We tried calling your contact number {contactNumber} but we could not get in touch with you. 
                     We need to speak with you to ask some verification before we proceed your order. 
                     Please give us a call on 0800 837 867 before {props.dueDate} - Mon - Fri 8:00 AM to 6:00 PM - Just mention your ref number: {props.dotNumber}. 
-                    Nga mihi, {props.agentName} from One NZ
+                    Ngā mihi, {props.agentName} from One NZ
                 </p>
             </div>
             <div className="comms-header">
@@ -64,7 +64,7 @@ function NumberContactedNoAnswer (props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName}, <br />
+                    Kia ora {props.customerName}, <br />
                     <br />
                     It's {props.agentName} from One NZ. <br />
                     <br />
@@ -74,7 +74,7 @@ function NumberContactedNoAnswer (props) {
                     <br />
                     Please give us a call on 0800 837 867 before {props.dueDate} - Mon - Fri 8:00 AM to 6:00 PM - Just mention your ref number: {props.dotNumber}. <br />
                     <br />
-                    Nga mihi,
+                    Ngā mihi,
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

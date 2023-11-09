@@ -39,9 +39,9 @@ function DuplicateAddress(props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileDuplicateAddContent}>
-                    Hi {props.customerName}, it's {props.agentName} here from One NZ. We're working on your online order but need a bit more info from you first.
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. We're working on your online order but need a bit more info from you first.
                     Give us a call on 0800 837 867 by {props.dueDate} &#40;Mon - Fri 8:00am to 6:00pm&#41; so we can get it sorted for you, or alternatively respond to the
-                    email sent by Online Shop. Your reference number is {props.dotNumber}. Thanks {props.agentName} from One NZ.
+                    email sent by Online Shop. Your reference number is {props.dotNumber}. Ngā mihi {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -50,7 +50,7 @@ function DuplicateAddress(props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailDuplicateAddContent}>
-                    Hi {props.customerName},<br />
+                    Kia ora {props.customerName},<br />
                     <br />
                     It's {props.agentName} here from One NZ.<br />
                     <br />
@@ -65,7 +65,7 @@ function DuplicateAddress(props) {
                     <br />
                     Your reference number is {props.dotNumber}.<br />
                     <br />
-                    Nga Mihi,<br />
+                    Ngā mihi,<br />
                     <br />
                     <Signature agentName={props.agentName} />
                 </p>

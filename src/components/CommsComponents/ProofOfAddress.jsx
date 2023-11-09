@@ -41,7 +41,7 @@ function ProofOfAddress (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName}, it's {props.agentName} from One NZ,
+                    Kia ora {props.customerName}, it's {props.agentName} from One NZ,
                     We are trying to process your mobile order {props.dotNumber} however we need more information to be able to continue.
                     To proceed with your order we need 2x letters with proof of address - utilities bill, bank statement etc. - that includes your full name and address.
                     *Copies must be readable and contain all 4 corners of the page*
@@ -56,13 +56,13 @@ function ProofOfAddress (props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName}, <br />
+                    Kia ora {props.customerName}, <br />
                     <br />
                     It's {props.agentName} from One NZ, <br />
                     <br />
                     We are trying to process your mobile order {props.dotNumber} however we need more information to be able to continue. <br />
                     <br />
-                    To proceed with your order we need 2x letters with proof of address - utilities bill, bank statement etc. - that includes your full name and address, <br />
+                    To proceed with your order we need 2x letters with proof of address - utilities bill, bank statement etc. - that includes your full name and address. <br />
                     <br />
                     *Copies must be readable and contain all 4 corners of the page* <br />
                     <br />
@@ -70,7 +70,7 @@ function ProofOfAddress (props) {
                     <br />
                     Once the requested information has been received, we will go ahead and resume your order. <br />
                     <br />
-                    Nga Mihi,
+                    Ngā mihi,
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

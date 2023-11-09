@@ -62,9 +62,9 @@ function WrittenOff(props) {
         <div id="commsOutput">
             <div className="comms-extra-details">
                 <label htmlFor="billingAccount">Billing Account</label>
-                <input name="billingAccount" onChange={billingAccountChange}></input>
-                <label htmlFor="writtenOff">Written Off Ammount</label>
-                <input name="writtenOff" onChange={writtenOffAmmountChange}></input>
+                <input type="number" name="billingAccount" onChange={billingAccountChange}></input>
+                <label htmlFor="writtenOff">Written Off amount</label>
+                <input type="number" name="writtenOff" onChange={writtenOffAmmountChange}></input>
                 <label htmlFor="debtAgency" >Debt Agency</label>
                 <input name="debtAgency" onChange={debtAgencyChange}></input>
                 <label htmlFor="debtAgencyContact">Agency Contact Number</label>
@@ -78,12 +78,12 @@ function WrittenOff(props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName}, it's {props.agentName} here from One NZ. We have your mobile order {props.dotNumber} but can't progress it yet because
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. We have your mobile order {props.dotNumber} but can't progress it yet because
                     your account {billingAccount} is written off by ${writtenOffAmmount}.
                     You can pay by contacting the debt agency {debtAgency} on {agencyContact}.
                     Once you've paid, please email credit.review@one.nz with your proof of payment attached and put the reference number Row-ID {props.customerRow} in the email subject
                     so we can move forward with your order.
-                    Nga Mihi {props.agentName} from One NZ.
+                    Ngā mihi {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -92,7 +92,7 @@ function WrittenOff(props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName},<br />
+                    Kia ora {props.customerName},<br />
                     <br />
                     It's {props.agentName} here from One NZ.<br />
                     <br />
@@ -103,7 +103,7 @@ function WrittenOff(props) {
                     Once you've paid, please email credit.review@one.nz with your proof of payment attached and put the reference number Row-ID {customerRow} in the email subject
                     so we can move forward with your order.<br />
                     <br />
-                    Nga Mihi,<br />
+                    Ngā mihi,<br />
                     <br />
                     <Signature agentName={props.agentName} />
                 </p>

@@ -41,11 +41,11 @@ function AlternateIdentificationRequired(props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName}, it's {props.agentName} here from One NZ. We're working on your online order {props.dotNumber} but need a bit more info from you first.
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. We're working on your online order {props.dotNumber} but need a bit more info from you first.
                     It seems that you have given incorrect details. Please respond to the email we have sent from Online Shop with one of the following forms of identification:
                     1. A Valid NZ Passport 2. A Valid New Zealand Drivers License 3. Valid International Passport and Visa. *Copies must be readable and contain all 4 corners of the page*
                     Please respond by {props.dueDate}.
-                    Nga Mihi, {props.agentName} from One NZ.
+                    Ngā mihi, {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -54,7 +54,7 @@ function AlternateIdentificationRequired(props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName},<br />
+                    Kia ora {props.customerName},<br />
                     <br />
                     It's {props.agentName} here from One NZ. We're working on your online order {props.dotNumber} but need a bit more info from you first.<br />
                     <br />
@@ -66,9 +66,9 @@ function AlternateIdentificationRequired(props) {
                     <br />
                     *Copies must be readable and contain all 4 corners of the page*<br />
                     <br />
-                    Please provide the required information by {props.dueDate} and once the requested information has been recieved, we will go ahead and resume your order.<br />
+                    Please provide the required information by {props.dueDate} and once the requested information has been received, we will go ahead and resume your order.<br />
                     <br />
-                    Nga Mihi,<br />
+                    Ngā mihi,<br />
                     <br/>
                     <Signature agentName={props.agentName} />
                 </p>

@@ -45,7 +45,7 @@ function GeneralRMI (props) {
                     We're working on your online order but need a bit more info from you first. 
                     Please give us a call on 0800 837 867 by {props.dueDate} (Mon - Fri 8:00AM to 6:00PM) so we can get it sorted for you. 
                     Just mention your ref number: {props.dotNumber}. 
-                    Nga Mihi, {props.agentName} from One NZ
+                    Ngā mihi, {props.agentName} from One NZ
                 </p>
             </div>
             <div className="comms-header">
@@ -64,7 +64,7 @@ function GeneralRMI (props) {
                     <br /> 
                     Just mention your ref number: {props.dotNumber}. <br />
                     <br />
-                    Nga Mihi,
+                    Ngā mihi,
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

@@ -11,6 +11,14 @@ input {
 input:hover {
   border-color: #00A45F;
 }
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 #websiteHeader {
   width: 100vw;

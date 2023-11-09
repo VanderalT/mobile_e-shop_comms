@@ -41,11 +41,11 @@ function CreditCheckDeclined (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName}, it's {props.agentName} here from One NZ. 
-                    Thanks for your online purchase. 
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. 
+                    Ngā mihi for your online purchase. 
                     Unfortunately, you haven't met the credit criteria for the plan you chose so we are unable to complete the order {props.dotNumber}. 
-                    If you'd like more information about your personal credit history, you can contact Illion on 0800 362 222. 
-                    Nga mihi, {props.agentName} from One NZ.
+                    If you'd like more information about your personal credit history, you can contact credit bureau - Illion - on 0800 362 222. 
+                    Ngā mihi, {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -54,15 +54,15 @@ function CreditCheckDeclined (props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName}, <br />
+                    Kia ora {props.customerName}, <br />
                     <br />
                     It's {props.agentName} here from One NZ. <br />
                     <br />
-                    Thanks for your online purchase. Unfortunately, you haven't met the credit criteria for the plan you chose so we are unable to complete the order {props.dotNumber}. <br />
+                    Ngā mihi for your online purchase. Unfortunately, you haven't met the credit criteria for the plan you chose so we are unable to complete the order {props.dotNumber}. <br />
                     <br /> 
-                    If you'd like more information about your personal credit history, you can contact Illion on 0800 362 222. <br />
+                    If you'd like more information about your personal credit history, you can contact credit bureau - Illion -  on 0800 362 222. <br />
                     <br />
-                    Nga mihi, <br />
+                    Ngā mihi, <br />
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

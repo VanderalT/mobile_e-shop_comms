@@ -41,11 +41,11 @@ function NZDLRequired (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                Kia Ora {props.customerName}, it's {props.agentName} from One NZ,
+                Kia ora {props.customerName}, it's {props.agentName} from One NZ,
                 We are trying to process your mobile order {props.dotNumber} however we need more information to be able to continue.
                 To proceed with your order we need to see a copy of the front and back of your NZ Drivers License. 
                 We'll send you an email shortly, please respond to the email the required details attached by {props.dueDate}.
-                Nga Mihi, {props.agentName} from One NZ.
+                Ngā mihi, {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -54,7 +54,7 @@ function NZDLRequired (props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName}, <br />
+                    Kia ora {props.customerName}, <br />
                     <br />
                     It's {props.agentName} from One NZ, <br />
                     <br />
@@ -64,7 +64,7 @@ function NZDLRequired (props) {
                     <br />
                     Please respond to this email with the required details attached by {props.dueDate}. <br />
                     <br />
-                    Nga Mihi, <br />
+                    Ngā mihi, <br />
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

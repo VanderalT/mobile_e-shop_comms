@@ -41,9 +41,10 @@ function AddressNotFoundComms (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Hi {props.customerName}, it's {props.agentName} here from One NZ. We're working on your online order but need a bit more info from you first.
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. We're working on your online order but need a bit more info from you first.
+                    There seems to be a problem with the delivery address provided.
                     We'll be sending an email shortly confirming the details needed. Please respond with the required information by {props.dueDate}.
-                    Your order number is {props.dotNumber}. Thanks {props.agentName} from One NZ.
+                    Your order number is {props.dotNumber}. Ngā mihi {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -52,7 +53,7 @@ function AddressNotFoundComms (props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName},<br />
+                    Kia ora {props.customerName},<br />
                     <br />
                     We're trying to process your mobile order: {props.dotNumber} however there is a problem with the delivery address provided.<br />
                     <br />
@@ -60,9 +61,9 @@ function AddressNotFoundComms (props) {
                     <br />
                     *Note: We do not send to PO Boxes*<br />
                     <br />
-                    Please respond by {props.dueDate} &#40;Mon - Fri 8:00am to 6:00pm&#41; so we can get it sorted for you.<br />
+                    Please respond with the details required or give us a call on 0800 837 867 by {props.dueDate} &#40;Mon - Fri 8:00am to 6:00pm&#41; so we can get it sorted for you.<br />
                     <br />
-                    Nga Mihi,<br />
+                    Ngā mihi,<br />
                     <br />
                     <Signature agentName={props.agentName} />
                 </p>

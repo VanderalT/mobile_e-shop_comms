@@ -41,8 +41,8 @@ function PreToPostCompleted (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName}, your new One NZ mobile plan is set up & you're ready to go. To keep track of everything, 
-                    download the My One NZ app or visit one.nz/using-self-service/ . Nga Mihi {props.agentName} from One NZ
+                    Kia ora {props.customerName}, your new One NZ mobile plan is set up & you're ready to go. To keep track of everything, 
+                    download the My One NZ app or visit one.nz/using-self-service/ . Ngā mihi {props.agentName} from One NZ
                 </p>
             </div>
             <div className="comms-header">
@@ -51,13 +51,13 @@ function PreToPostCompleted (props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName}, <br /> 
+                    Kia ora {props.customerName}, <br /> 
                     <br />
                     Your new One NZ mobile plan is set up & you're ready to go. <br />
                     <br />
                     To keep track of everything, download the My One NZ app or visit one.nz/using-self-service/ <br />
                     <br />
-                    Nga Mihi,
+                    Ngā mihi,
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

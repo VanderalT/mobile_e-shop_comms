@@ -65,9 +65,9 @@ function NewConnectionCompletedESim (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                Kia Ora {props.customerName}, your new One NZ {plan} is all set up and ready to use {number} - {simNumber}. 
+                Kia ora {props.customerName}, your new One NZ {plan} is all set up and ready to use. Your new number is {number} - Sim number {simNumber}. 
                 Download the My One NZ app now - your one stop shop for managing your plan and paying your bill. 
-                Check it out at one.nz/using-self-service/ . Nga Mihi, {props.agentName} from One NZ.
+                Check it out at one.nz/using-self-service/ . Ngā mihi, {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -76,7 +76,7 @@ function NewConnectionCompletedESim (props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName}, <br />
+                    Kia ora {props.customerName}, <br />
                     <br />
                     Your new One NZ {plan} is all set up and ready to use {number} - {simNumber}. <br />
                     <br />
@@ -84,7 +84,7 @@ function NewConnectionCompletedESim (props) {
                     <br />
                     Check it out at one.nz/using-self-service/ <br />
                     <br />
-                    Nga Mihi, <br />
+                    Ngā mihi, <br />
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

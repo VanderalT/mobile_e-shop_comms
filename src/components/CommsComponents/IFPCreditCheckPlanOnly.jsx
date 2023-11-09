@@ -41,10 +41,10 @@ function IFPCreditCheckPlanOnly (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                Kia Ora {props.customerName}, your order {props.dotNumber} for an Interest Free device has been cancelled as you have not met the credit check criteria. 
-                The good news, however, is that you can still sign up to a mobile plan with us, and/or buy a device outright at one.nz/pay-monthly/or by calling 0800 533 001. 
-                To discuss your credit status, please get in touch with the Credit Bureau (Illion) on 0800 362 222. 
-                Thanks, {props.customerName} from One NZ.
+                Kia ora {props.customerName}, your order {props.dotNumber} for an Interest Free device has been cancelled as you have not met the credit check criteria. 
+                The good news, however, is that you can still sign up to a mobile plan with us and/or buy a device outright at one.nz/pay-monthly/or by calling 0800 533 001. 
+                To discuss your credit status, please get in touch with the credit bureau - Illion - on 0800 362 222. 
+                Ngā mihi, {props.customerName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -53,15 +53,15 @@ function IFPCreditCheckPlanOnly (props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName},<br /> 
+                    Kia ora {props.customerName},<br /> 
                     <br />
                     Your order, {props.dotNumber}, for an Interest Free device has been cancelled as you have not met the credit check criteria. <br /> 
                     <br />
-                    The good news, however, is that you can still sign up to a mobile plan with us, and/or buy a device outright at one.nz/pay-monthly/or by calling 0800 533 001. <br />
+                    The good news, however, is that you can still sign up to a mobile plan with us and/or buy a device outright at one.nz/pay-monthly/or by calling 0800 533 001. <br />
                     <br />
-                    To discuss your credit status, please get in touch with the Credit Bureau (Illion) on 0800 362 222. <br />
+                    To discuss your credit status, please get in touch with the credit bureau - Illion - on 0800 362 222. <br />
                     <br />
-                    Thanks, {props.customerName} from One NZ. <br />
+                    Ngā mihi, {props.customerName} from One NZ. <br />
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

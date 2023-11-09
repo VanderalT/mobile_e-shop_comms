@@ -33,12 +33,12 @@ function TwoFactorAuthenticationBeforePort (props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName}, 
+                    Kia ora {props.customerName}, 
                     it's {props.agentName} from One NZ in regard to your mobile order {props.dotNumber}.
                     We're about to raise the request to port your number over to One NZ. 
                     You will receive a TXT message shortly to confirm.
                     Please ensure you respond with “Yes” or “Y” within 2 hours of receiving it. 
-                    Thanks, {props.agentName} at One NZ 
+                    Ngā mihi, {props.agentName} at One NZ 
                 </p>
             </div>
             <div className="comms-header">

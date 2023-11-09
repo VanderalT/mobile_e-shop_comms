@@ -52,9 +52,9 @@ function PendingBillArrears(props) {
         <div id="commsOutput">
             <div className="comms-extra-details">
                 <label htmlFor="billingAccount">Billing Account</label>
-                <input name="billingAccount" onChange={billingAccountChange}></input>
-                <label htmlFor="pendingAmmount">Pending Ammount</label>
-                <input name="pendingAmmount" onChange={pendingAmmountChange}></input>
+                <input type="number" name="billingAccount" onChange={billingAccountChange}></input>
+                <label htmlFor="pendingAmmount">Pending amount</label>
+                <input type="number" name="pendingAmmount" onChange={pendingAmmountChange}></input>
                 <label htmlFor="customer_row_id">Row-ID</label>
                 <input type="text" value={customerRow} onChange={customerRowChange}></input>
             </div>
@@ -64,11 +64,12 @@ function PendingBillArrears(props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName}, it's {props.agentName} here from One NZ. We have your mobile order {props.dotNumber} but can't progress it yet because
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. We have your mobile order {props.dotNumber} but can't progress it yet because
                     your account {billingAccount} is overdue by ${pendingAmmount}.
                     You can pay at One.nz/pay, a One NZ store, the My One NZ app, or by calling 777 from your mobile.
-                    Please pay off the pending bill before {props.dueDate} then call us on 0800 837 867 to advise.
-                    Nga Mihi {props.agentName} from One NZ.
+                    Once you've paid, please email credit.review@one.nz with your proof of payment attached and put the reference number Row-ID {customerRow} in the email subject
+                    so we can move forward with your order.
+                    Ngā mihi {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -77,7 +78,7 @@ function PendingBillArrears(props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName},<br />
+                    Kia ora {props.customerName},<br />
                     <br />
                     It's {props.agentName} here from One NZ.<br />
                     <br />
@@ -88,7 +89,7 @@ function PendingBillArrears(props) {
                     Once you've paid, please email credit.review@one.nz with your proof of payment attached and put the reference number Row-ID {customerRow} in the email subject
                     so we can move forward with your order.<br />
                     <br />
-                    Nga Mihi,<br />
+                    Ngā mihi,<br />
                     <br />
                     <Signature agentName={props.agentName} />
                 </p>

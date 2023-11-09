@@ -41,15 +41,15 @@ function NumberContactedInvalid (props) {
                 <p ref={emailContent}>
                     Kia ora {props.customerName}, <br />
                     <br />
-                    it's {props.agentName} from One NZ. <br />
+                    It's {props.agentName} from One NZ. <br />
                     <br />
                     We have attempted to contact you to discuss your online order but the number was invalid. <br />
                     <br />
                     Please provide your valid contact number to proceed. <br />
                     <br />
-                    Please either respond to this email with the details required or Give us a call on 0800 837 867 before {props.dueDate} - Mon - Fri 8:00 AM to 6:00 PM -  order number: {props.dotNumber}.<br />
+                    Please either respond to this email with the details required or give us a call on 0800 837 867 before {props.dueDate} - Mon - Fri 8:00 AM to 6:00 PM -  order number: {props.dotNumber}.<br />
                     <br />
-                    Nga Mihi,
+                    Ngā mihi,
                     <Signature agentName={props.agentName} />
                 </p>
             </div>

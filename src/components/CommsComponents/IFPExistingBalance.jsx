@@ -41,7 +41,7 @@ function IFPExistingBalance(props) {
     return (
         <div id="commsOutput">
             <div className="comms-extra-details">
-                <label htmlFor="pendingAmmount">Pending Ammount</label>
+                <label htmlFor="pendingAmmount">Pending amount</label>
                 <input name="pendingAmmount" type="number" onChange={pendingAmmountChange}></input>
             </div>
             <div className="comms-header">
@@ -50,8 +50,8 @@ function IFPExistingBalance(props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Kia Ora {props.customerName}, we are trying to process your mobile order however you still have an existing Intrest Free Payment Device you are paying off.
-                    We'll send you an email shortly confirming the details needed. Please make sure to respond with the required information by {props.dueDate}. Nga Mihi, {props.agentName} at One NZ.
+                    Kia ora {props.customerName}, we are trying to process your mobile order however you still have an existing InterestFree Payment Device you are paying off.
+                    We'll send you an email shortly confirming the details needed. Please make sure to respond with the required information by {props.dueDate}. Ngā mihi, {props.agentName} at One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -60,17 +60,17 @@ function IFPExistingBalance(props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Kia Ora {props.customerName},<br />
+                    Kia ora {props.customerName},<br />
                     <br />
                     It's {props.agentName} here from One NZ. We're working on your online order {props.dotNumber} but need a bit more info from you first.<br />
                     <br />
-                    Currently you still have an existing Interest Free Payment Device you are paying off, with a remaining ammount of ${pendingAmmount}<br />
+                    Currently you still have an existing Interest Free Payment Device you are paying off, with a remaining amount of ${pendingAmmount}<br />
                     <br />
-                    Please respond to this email confirming if you are happy for this ammount to be billed in full to your next invoice or if you wish to cancel your mobile order.<br />
+                    Please respond to this email confirming if you are happy for this amount to be billed in full to your next invoice or if you wish to cancel your mobile order.<br />
                     <br />
                     Please provide the required information by {props.dueDate}.<br />
                     <br />
-                    Nga Mihi,<br />
+                    Ngā mihi,<br />
                     <br/>
                     <Signature agentName={props.agentName} />
                 </p>

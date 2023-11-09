@@ -41,9 +41,11 @@ function InvalidLsp(props) {
             </div>
             <div className="comms-mobile-content">
                 <p ref={mobileContent}>
-                    Hi {props.customerName}, it's {props.agentName} here from One NZ. We're getting in touch to let you know that we've recieved your mobile order,
-                    but we're experiencing some difficulty transfering the number over from your current provider.
-                    Give us a call on 0800 837 867 by {props.dueDate} &#40;Mon - Fri 8:00am to 6:00pm&#41; to confirm the details. Your order reference number is {props.dotNumber}. Thanks {props.agentName} from One NZ.
+                    Kia ora {props.customerName}, it's {props.agentName} here from One NZ. We're getting in touch to let you know that we've received your mobile order,
+                    but we're experiencing some difficulty transferring the number over from your current provider.
+                    We'll send you an email shortly, please respond to the email the required details attached by {props.dueDate}.
+                    Once the requested information has been received, we will go ahead and resume your order.
+                    We. Ngā mihi {props.agentName} from One NZ.
                 </p>
             </div>
             <div className="comms-header">
@@ -52,13 +54,13 @@ function InvalidLsp(props) {
             </div>
             <div className="comms-email-content">
                 <p ref={emailContent}>
-                    Hi {props.customerName},<br />
+                    Kia ora {props.customerName},<br />
                     <br />
                     It's {props.agentName} here from One NZ.<br />
                     <br />
-                    We're getting in touch to let you know that we've recieved your mobile order, but we're experiencing some difficulty transfering the number over from your current provider.<br />
+                    We're getting in touch to let you know that we've received your mobile order, but we're experiencing some difficulty transferring the number over from your current provider.<br />
                     <br />
-                    Please confirm the following details to proceed:<br />
+                    Please confirm the following details in a response to this email to proceed:<br />
                     <br />
                     Which service provider are you switching from?<br />
                     What is the number you would like to bring with you?<br />
@@ -71,11 +73,11 @@ function InvalidLsp(props) {
                     Please provide your Sim card number or attach a photo of the Sim card &#40; if possible &#41;<br />
                     For steps on how to find out your sim card number, <a href="https://one.nz/faq/find-a-sim-card-number">click this link</a><br />
                     <br />
-                    Please provide the required information by {props.dueDate} and once the requested information has been recieved, we will go ahead and resume your order.<br />
+                    Please provide the required information by {props.dueDate} and once the requested information has been received, we will go ahead and resume your order.<br />
                     <br />
                     Your order reference number is {props.dotNumber}.<br />
                     <br />
-                    Nga Mihi,<br />
+                    Ngā mihi,<br />
                     <br />
                     <Signature agentName={props.agentName} />
                 </p>
