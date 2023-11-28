@@ -81,7 +81,7 @@ function WrittenOff(props) {
                     Kia ora {props.customerName}, it's {props.agentName} here from One NZ. We have your mobile order {props.dotNumber} but can't progress it yet because
                     your account {billingAccount} is written off by ${writtenOffAmmount}.
                     You can pay by contacting the debt agency {debtAgency} on {agencyContact}.
-                    Once you've paid, please email credit.review@one.nz with your proof of payment attached and put the reference number Row-ID {props.customerRow} in the email subject
+                    Once you've paid, please email credit.review@one.nz with your proof of payment attached and put the reference number Row-ID {customerRow} in the email subject
                     so we can move forward with your order.
                     Ngā mihi {props.agentName} from One NZ.
                 </p>
