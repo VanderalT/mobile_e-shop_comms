@@ -1,5 +1,3 @@
-import oneNZLogo from '../../oneNZLogo.png'
-
 function Signature (props) {
 
     return(
@@ -13,7 +11,7 @@ function Signature (props) {
                             <p style={{lineHeight: '105%', margin: '0cm', fontSize: '11pt', fontFamily: 'Calibri, sans-serif',}}>
                                 <a href="https://one.nz">
                                     <span style={{color: 'windowtext',}}>
-                                        <img src={oneNZLogo} alt='One NZ Logo' width="74" height="90" border="0"></img>
+                                        <img src="https://content.vodafone.co.nz/dims4/default/1dd5dda/2147483647/strip/true/crop/1081x1081+0+0/resize/120x120!/quality/90/?url=http%3A%2F%2Fvodafonenz-brightspot.s3.amazonaws.com%2Fbf%2F1e%2Fb85edbf5411a9bb730a270902c94%2F2ds-one-nz-secondary-symbol-rgb.png" alt='One NZ Logo' width="90" height="90" border="0"></img>
                                     </span>
                                 </a>
                             </p>
@@ -28,6 +26,7 @@ function Signature (props) {
                                 </strong>
                             </p>
                             <p style={{margin: '0cm', fontSize: '11pt', fontFamily: 'Calibri, sans-serif',}}>
+
                                 <span style={{fontSize: '14.0pt', color: '#333333',}}>
                                     Online Shop
                                 </span>
